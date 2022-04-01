@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>C&B Survey form</title>
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220330084610">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900&_v=20220330084610" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900&_v=20220330084610" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__content">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Consulting</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Analytics</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Growth</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Risk</a></li>
+							<li class="menu__item"><a href="" class="menu__link">AI</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<style>
+			body {
+				background: url("img/background/surveyimage.webp");
+			}
+		</style>
+
+
+		<main class="page">
+			<div class="_container">
+				<h1 class="title">Consult & Business TEAM Survey form
+				</h1>
+				<div class="subtitle">
+					Thank you for taking the time to help us improve the platform
+				</div>
+
+				<div class="survey-form">
+					<form id="survey-form">
+						<div class="form-group">
+							<label id="name-label" for="name">Name</label>
+							<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+						</div>
+						<div class="form-group">
+							<label id="email-label" for="email">Email</label>
+							<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+						</div>
+						<div class="form-group">
+							<label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+							<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+						</div>
+						<div class="form-group">
+							<p class="formlabel">Which option best describes your current role?</p>
+							<select id="dropdown" name="role" class="form-control" required="">
+								<option disabled="" selected="" value="">Select current role</option>
+								<option value="student">Corporation</option>
+								<option value="job">Full Time Job</option>
+								<option value="learner">Full Time Learner</option>
+								<option value="preferNo">Prefer not to say</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<p class="formlabel">Would you recommend Consult & Business TEAM to a friend?</p>
+							<label>
+								<input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+							<label>
+								<input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+							<label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+						</div>
+
+						<div class="form-group">
+							<p class="formlabel">
+								What is your favorite feature of Consult & Business TEAM?
+							</p>
+							<select id="most-like" name="mostLike" class="form-control" required="">
+								<option disabled="" selected="" value="">Select an option</option>
+								<option value="Friendship">Analytics and big data</option>
+								<option value="Projects">Projects</option>
+								<option value="Community">Community</option>
+								<option value="Consultation">Consulting</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<div class="formlabel">
+								What would you like to see improved?
+								<span class="clue">(Check all that apply)</span>
+							</div>
+
+							<label><input name="prefer" value="Consulting" type="checkbox" class="input-checkbox">Consulting</label>
+							<label>
+								<input name="prefer" value="Growth" type="checkbox" class="input-checkbox">Growth</label>
+							<label><input name="prefer" value="Analytics" type="checkbox" class="input-checkbox">Analytics</label>
+							<label><input name="prefer" value="Big data" type="checkbox" class="input-checkbox">Big data</label>
+							<label><input name="prefer" value="Financial Services" type="checkbox" class="input-checkbox">Financial Services</label>
+							<label><input name="prefer" value="Risk" type="checkbox" class="input-checkbox">Risk</label>
+							<label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos</label>
+							<label><input name="prefer" value=" Industries " type="checkbox" class="input-checkbox"> Industries </label>
+							<label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki</label>
+							<label><input name="prefer" value="AI" type="checkbox" class="input-checkbox">AI</label>
+							<label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label>
+						</div>
+
+						<div class="form-group">
+							<p class="formlabel">Any comments or suggestions?</p>
+							<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+						</div>
+
+						<div class="form-group">
+							<button type="submit" id="submit" class="submit-button">
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220330084610"></script>
+</body>
+
+</html>
